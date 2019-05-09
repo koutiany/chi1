@@ -25,24 +25,10 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <style>
     body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
   </style>
 </div>
 
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <body>
 
@@ -91,10 +77,9 @@
       </p>
 
 
-
-
       <!-- mapbox -->
-      <div id='map'></div>
+      <div id='map' style='width:1110px; height:600px; top:-5px; bottom:20px; left:150px'>
+      </div>
 
       <script>
       mapboxgl.accessToken = 'pk.eyJ1Ijoia291dGlhbnkiLCJhIjoiY2puZzdxY3V4MDAzcjNtcHVid3RmMTc2eSJ9.jakbkG46bVyAT-ZwxS2ddg';
@@ -105,6 +90,7 @@
         zoom: 5.4
       });
       </script>
+
 
     </header>
 
