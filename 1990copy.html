@@ -67,34 +67,35 @@
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
       <h1 class="display-3">1990 Italy World Cup</h1>
-      <p class="lead">In this world cup, Germany recurited 23 players. </p>
+      <p class="lead">
+      This was the last time West Germany competed in the international games and won the World Cup.
+      </p>
       <img src="image/1990.jpg" class="img-fluid" alt="Responsive image">
       <p class="lead">
-      <p>
-      At the end of the 2014 World Cup, Germany earned the highest Elo rating of any national football team in history, with a record 2205 points. Germany is also the only European nation that has won a FIFA World Cup in the Americas.
+      <p>The two teams in the World Cup Final were West Germany and Argentina. West Germany player Andreas Brehme (first from right, bottom row) scored at the 85 minutes with a penalty and helped the team to win the Jules Rimet Trophy. During the first round, West Germany beat Yugoslavia (4-1), United Arab Emirates (5-1) and had a draw with Colombia (1-1). With 7 points they entered the knockout stage and won the matches with Netherlands (2-1), Czechoslovakia (1-0); earned the ticket to the final after beating England (4-3 penalty) in the semifinals.</p>
+      <p>The map below shows the birthplace for each player. As we can see, all twenty-two players are born and raised in West Germany. Captain Lothar Matthäus, who comes from Erlangen, Bavaria, was named European Footballer of the Year. 26 year-old striker Jürgen Klinsmann comes from Göppingen, Baden-Württemberg.</p>
       </p>
-      </p>
-      <p>
-      </p
+
+
+      <!-- mapbox -->
+      <div id='map' style='width:1110px; height:600px; top:-5px; bottom:20px; left:150px'>
+      </div>
+
+      <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoia291dGlhbnkiLCJhIjoiY2puZzdxY3V4MDAzcjNtcHVid3RmMTc2eSJ9.jakbkG46bVyAT-ZwxS2ddg';
+      const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/koutiany/cjtnjsg9a3i9q1fqroccgoybo',
+        center: [11.110508, 48.031493],
+        zoom: 5.4
+      });
       </script>
+
+
     </header>
 
   </div>
 
-<!-- mapbox -->
-<div id='map' style='width:1110px; height:600px; top:-5px; bottom:20px; left:150px'>
-</div>
-
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoia291dGlhbnkiLCJhIjoiY2puZzdxY3V4MDAzcjNtcHVid3RmMTc2eSJ9.jakbkG46bVyAT-ZwxS2ddg';
-const map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/koutiany/cjtnjsg9a3i9q1fqroccgoybo',
-  center: [11.110508, 48.031493],
-  zoom: 5.4
-});
-</script>
-</div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
